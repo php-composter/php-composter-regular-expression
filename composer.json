@@ -1,0 +1,33 @@
+{
+  "name": "php-composter/php-composter-regular-expression",
+  "description": "PHP Composter regular expression checks.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alain Schlesser",
+      "email": "alain.schlesser@gmail.com"
+    }
+  ],
+  "type": "php-composter-action",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../php-composter"
+    }
+  ],
+  "require": {
+    "php-composter/php-composter": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "PHPComposter\\RegularExpression\\": "src/"
+    }
+  },
+  "extra": {
+    "php-composter-hooks": {
+      "10.commit-msg": "PHPComposter\\RegularExpression\\Check::dispatch"
+    }
+  }
+}

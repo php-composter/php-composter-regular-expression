@@ -43,6 +43,53 @@ Then, you need to add the regular expressions you want to check for. As an examp
 
 It should just work when you `git commit`.
 
+## Composer Extra Reference
+
+The Composer extra entry takes the following format:
+```JSON
+"extra": {
+  "php-composter-regular-expression": {
+    "<hook to check the regular expression on>": {
+      "<content element to check>": {
+        "<rule>": "<regular expression>"
+      }
+    }
+  }
+}
+```
+
+Each hook can contain multiple content elements to check, and each content element can contain multiple rules.
+
+The regular expression will be wrapped in special delimiter chars (`chr(1)`), so you don't need to include these.
+
+### Supported hooks
+
+**`commit-message`:**
+
+Check the commit message after it has been submitted.
+
+### Supported content elements
+
+#### For the `commit-message` hook
+
+**`subject`:**
+
+Subject line of the commit message, meaning the very first line of the commit message up until the first EOL character.
+
+**`body`:**
+
+Body of the commit message, meaning everything after the first EOL character.
+
+### Supported rules
+
+**`has`:**
+
+Passes the check if the regular expression results in one or more matches.
+
+**`has-not`:**
+
+Passes the check if the regular expression results in no matches.
+
 ## Contributing
 
 All feedback / bug reports / pull requests are welcome.

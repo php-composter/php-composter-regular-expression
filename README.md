@@ -2,10 +2,10 @@
 
 ### PHP Composter regular expression checks.
 
-[![Latest Stable Version](https://poser.pugx.org/php-composter/php-composter-regular-expressions/v/stable)](https://packagist.org/packages/php-composter/php-composter-regular-expressions)
-[![Total Downloads](https://poser.pugx.org/php-composter/php-composter-regular-expressions/downloads)](https://packagist.org/packages/php-composter/php-composter-regular-expressions)
-[![Latest Unstable Version](https://poser.pugx.org/php-composter/php-composter-regular-expressions/v/unstable)](https://packagist.org/packages/php-composter/php-composter-regular-expressions)
-[![License](https://poser.pugx.org/php-composter/php-composter-regular-expressions/license)](https://packagist.org/packages/php-composter/php-composter-regular-expressions)
+[![Latest Stable Version](https://poser.pugx.org/php-composter/php-composter-regular-expression/v/stable)](https://packagist.org/packages/php-composter/php-composter-regular-expression)
+[![Total Downloads](https://poser.pugx.org/php-composter/php-composter-regular-expression/downloads)](https://packagist.org/packages/php-composter/php-composter-regular-expression)
+[![Latest Unstable Version](https://poser.pugx.org/php-composter/php-composter-regular-expression/v/unstable)](https://packagist.org/packages/php-composter/php-composter-regular-expression)
+[![License](https://poser.pugx.org/php-composter/php-composter-regular-expression/license)](https://packagist.org/packages/php-composter/php-composter-regular-expression)
 
 This Composer package will check your commit messages to make sure they match a set of regular expression rules.
 
@@ -22,7 +22,7 @@ This is a [PHP Composter](https://github.com/php-composter/php-composter) Action
 First, you need to add the package as a development requirement to your `composer.json`:
 
 ```BASH
-composer require --dev php-composter/php-composter-regular-expressions
+composer require --dev php-composter/php-composter-regular-expression
 ```
 
 Then, you need to add the regular expressions you want to check for. As an example, the following expression will ensure that commit message subject lines start with one of the following words: `feature`, `bug`, `documentation`, `style`:

@@ -1,4 +1,4 @@
-# PHP Composter Regular Expressions (WIP)
+# PHP Composter Regular Expressions
 
 ### PHP Composter regular expression checks.
 
